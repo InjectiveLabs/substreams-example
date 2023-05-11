@@ -1,0 +1,28 @@
+specVersion: v0.1.0
+description: 
+
+package:
+  name: Transfer
+  version: v0.0.1
+
+protobuf:
+  files:
+    - gogoproto/gogo.proto
+    - types.proto
+    - cosmos.proto
+  importPaths:
+    - ./proto
+
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: ./target/wasm32-unknown-unknown/release/substreams.wasm
+
+modules:
+  - name: map_transfer
+    kind: map
+    startBlock: 1
+    inputs:
+      - source: sf.cosmos.type.v1.Block
+    output: 
+      type: proto:sf.cosmos.type.v1.ResponseBeginBlock

@@ -1,0 +1,1 @@
+/Users/macbookpro/substreams-example/target/wasm32-unknown-unknown/release/substreams.wasm: /Users/macbookpro/substreams-example/src/lib.rs /Users/macbookpro/substreams-example/src/pb/mod.rs /Users/macbookpro/substreams-example/src/pb/sf.cosmos.type.v1.rs
